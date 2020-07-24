@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -16,8 +16,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'left',
       color: theme.palette.text.secondary,
       background: 'linear-gradient(45deg, #0F2027 30%,#203A43 60% ,#2C5364 90% )',
-      fontSize: '30px',
-      color: '#b0bec5'
+      fontSize: '30px'
    },
    paper1: {
       padding: theme.spacing(3),
@@ -25,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
       background: 'linear-gradient(45deg, #0F2027 30%,#203A43 60% ,#2C5364 90% )',
       fontSize: '20px',
-      color: '#b0bec5',
       lineHeight: 2,
       height: "100%",
    },
@@ -35,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
       background: 'linear-gradient(45deg, #0F2027 30%,#203A43 60% ,#2C5364 90% )',
       fontSize: '20px',
-      color: '#b0bec5',
       lineHeight: 3.2,
       height: "100%",
    },

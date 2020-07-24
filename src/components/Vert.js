@@ -11,14 +11,9 @@ import CloudDownloadRoundedIcon from '@material-ui/icons/CloudDownloadRounded';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CallIcon from '@material-ui/icons/Call';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Hidden from '@material-ui/core/Hidden';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Paper from '@material-ui/core/Paper';
 import me from '../image/me1.png';
-import Image from 'material-ui-image';
 import Index from './Change'
 import About from './About'
-import Divider from '@material-ui/core/Divider';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -144,7 +139,7 @@ export default function VerticalTabs() {
         <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
               <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} style={{ width: '95%', height: '50%' }} />
+                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
@@ -177,7 +172,7 @@ export default function VerticalTabs() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" overflow="auto" order={2} justifyContent="flex-start">
+            <Box className={classes.box2} height="55%" width="75%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
@@ -187,7 +182,7 @@ export default function VerticalTabs() {
         <Grid container spacing={0}  >
           <Grid item xs={12} sm={5} >
             <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="45%" >
-              <img src={me} responsive className={classes.im} style={{ width: '90%', height: '50%' }} />
+              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
               <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
               <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
               <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
@@ -211,7 +206,7 @@ export default function VerticalTabs() {
         <Grid container spacing={0}  >
           <Grid item xs={12} sm={5} >
             <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="65%" >
-              <img src={me} responsive className={classes.im} style={{ width: '90%', height: '50%' }} />
+              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
               <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
               <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
               <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
@@ -235,7 +230,7 @@ export default function VerticalTabs() {
         <Grid container spacing={0}  >
           <Grid item xs={12} sm={5} >
             <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="45%" >
-              <img src={me} responsive className={classes.im} style={{ width: '90%', height: '50%' }} />
+              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
               <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
               <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
               <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
@@ -259,7 +254,7 @@ export default function VerticalTabs() {
         <Grid container spacing={0}  >
           <Grid item xs={12} sm={5} >
             <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" >
-              <img src={me} responsive className={classes.im} style={{ width: '90%', height: '50%' }} />
+              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
               <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
               <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
               <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
