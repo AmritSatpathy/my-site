@@ -14,6 +14,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import me from '../image/me1.png';
 import Index from './Change'
 import About from './About'
+import Skills from './Skills'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -172,103 +174,179 @@ export default function VerticalTabs() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" width="75%" overflow="auto" order={2} justifyContent="flex-start">
+            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Grid container spacing={0}  >
-          <Grid item xs={12} sm={5} >
-            <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="45%" >
-              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
-              <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
-              <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
-              <a href="https://github.com/AmritSatpathy" ><GitHubIcon style={{ fontSize: 28 }} /></a>
-              <hr style={{ color: '#03a9f4', backgroundColor: '#03a9f4', height: 3 }} />
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Download CV&nbsp;
-          <CloudDownloadRoundedIcon style={{ fontSize: 36 }} /></a></span>
-              <span style={{ fontSize: '20px', color: '#03a9f4' }}  >|</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Contact Me<CallIcon style={{ fontSize: 36 }} /></a></span>
-            </Box>
+      <Grid container spacing={3}  >
+          <Grid item xs={12} sm={6} >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Index />
+                  </Typography><br />
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link>
+                    <Link  href="https://github.com/AmritSatpathy" >
+                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link><br /><br /><br />
+                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                  </Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Download CV&nbsp;
+                     <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
+                     </Link>
+                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                    |
+                    </span >
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Contact Me
+                        <CallIcon style={{ fontSize: 36 }} color="primary" />
+                    </Link>
+                  </Typography>
+                </ThemeProvider>
+              </Box>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} fontWeight="fontWeightBold" height="62%" overflow="auto">
-              <About />
+            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+              <Skills />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Grid container spacing={0}  >
-          <Grid item xs={12} sm={5} >
-            <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="65%" >
-              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
-              <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
-              <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
-              <a href="https://github.com/AmritSatpathy" ><GitHubIcon style={{ fontSize: 28 }} /></a>
-              <hr style={{ color: '#03a9f4', backgroundColor: '#03a9f4', height: 3 }} />
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Download CV&nbsp;
-          <CloudDownloadRoundedIcon style={{ fontSize: 36 }} /></a></span>
-              <span style={{ fontSize: '20px', color: '#03a9f4' }}  >|</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Contact Me<CallIcon style={{ fontSize: 36 }} /></a></span>
-            </Box>
+      <Grid container spacing={3}  >
+          <Grid item xs={12} sm={6} >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Index />
+                  </Typography><br />
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link>
+                    <Link  href="https://github.com/AmritSatpathy" >
+                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link><br /><br /><br />
+                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                  </Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Download CV&nbsp;
+                     <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
+                     </Link>
+                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                    |
+                    </span >
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Contact Me
+                        <CallIcon style={{ fontSize: 36 }} color="primary" />
+                    </Link>
+                  </Typography>
+                </ThemeProvider>
+              </Box>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} fontWeight="fontWeightBold" height="62%" overflow="auto">
+            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Grid container spacing={0}  >
-          <Grid item xs={12} sm={5} >
-            <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" height="45%" >
-              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
-              <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
-              <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
-              <a href="https://github.com/AmritSatpathy" ><GitHubIcon style={{ fontSize: 28 }} /></a>
-              <hr style={{ color: '#03a9f4', backgroundColor: '#03a9f4', height: 3 }} />
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Download CV&nbsp;
-          <CloudDownloadRoundedIcon style={{ fontSize: 36 }} /></a></span>
-              <span style={{ fontSize: '20px', color: '#03a9f4' }}  >|</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Contact Me<CallIcon style={{ fontSize: 36 }} /></a></span>
-            </Box>
+      <Grid container spacing={3}  >
+          <Grid item xs={12} sm={6} >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Index />
+                  </Typography><br />
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link>
+                    <Link  href="https://github.com/AmritSatpathy" >
+                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link><br /><br /><br />
+                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                  </Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Download CV&nbsp;
+                     <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
+                     </Link>
+                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                    |
+                    </span >
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Contact Me
+                        <CallIcon style={{ fontSize: 36 }} color="primary" />
+                    </Link>
+                  </Typography>
+                </ThemeProvider>
+              </Box>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} fontWeight="fontWeightBold" height="62%" overflow="auto">
+            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Grid container spacing={0}  >
-          <Grid item xs={12} sm={5} >
-            <Box className={classes.box1} fontWeight="fontWeightBold" width="90%" >
-              <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '90%', height: '50%' }} />
-              <span style={{ fontSize: '40px', color: '#b0bec5' }}  >Amrit Satpathy</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><Index /></span>
-              <a style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" ><LinkedInIcon style={{ fontSize: 28 }} /></a>
-              <a href="https://github.com/AmritSatpathy" ><GitHubIcon style={{ fontSize: 28 }} /></a>
-              <hr style={{ color: '#03a9f4', backgroundColor: '#03a9f4', height: 3 }} />
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Download CV&nbsp;
-          <CloudDownloadRoundedIcon style={{ fontSize: 36 }} /></a></span>
-              <span style={{ fontSize: '20px', color: '#03a9f4' }}  >|</span>
-              <span style={{ fontSize: '20px', color: '#2ce65d' }} ><a style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">Contact Me<CallIcon style={{ fontSize: 36 }} /></a></span>
-            </Box>
+      <Grid container spacing={3}  >
+          <Grid item xs={12} sm={6} >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Index />
+                  </Typography><br />
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link>
+                    <Link  href="https://github.com/AmritSatpathy" >
+                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                      </Link><br /><br /><br />
+                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                  </Typography>
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Download CV&nbsp;
+                     <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
+                     </Link>
+                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                    |
+                    </span >
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                      Contact Me
+                        <CallIcon style={{ fontSize: 36 }} color="primary" />
+                    </Link>
+                  </Typography>
+                </ThemeProvider>
+              </Box>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} fontWeight="fontWeightBold" height="62%" overflow="auto">
+            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
