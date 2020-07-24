@@ -12,9 +12,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import CallIcon from '@material-ui/icons/Call';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import me from '../image/me1.png';
-import Index from './Change'
-import About from './About'
-import Skills from './Skills'
+import Index from './Change.jsx'
+import About from './About.jsx'
+import Skills from './Skills.jsx'
+import Works from './Works.jsx'
 
 
 function TabPanel(props) {
@@ -91,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 10
   },
   box2: {
-    background: 'linear-gradient(45deg, #0F2027 30%,#203A43 60% ,#2C5364 90% )',
+    background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, 1)',
     color: 'white',
@@ -133,9 +134,8 @@ export default function VerticalTabs() {
       >
         <Tab label="HOME" {...a11yProps(0)} style={{ fontSize: '20px', color: '#2ce65d' }} />
         <Tab label="ABOUT" {...a11yProps(1)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="RESUME" {...a11yProps(2)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="WORKS" {...a11yProps(3)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="CONTACT" {...a11yProps(4)} style={{ fontSize: '20px', color: '#2ce65d' }} />
+        <Tab label="PROJECTS" {...a11yProps(2)} style={{ fontSize: '20px', color: '#2ce65d' }} />
+        <Tab label="CONTACT" {...a11yProps(3)} style={{ fontSize: '20px', color: '#2ce65d' }} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Grid container spacing={3}  >
@@ -183,7 +183,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
       <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="28%" order={1} justifyContent="flex-start" overflow="auto" >
                 <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
@@ -217,7 +217,7 @@ export default function VerticalTabs() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+            <Box className={classes.box2} height="25%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <Skills />
             </Box>
           </Grid>
@@ -261,55 +261,12 @@ export default function VerticalTabs() {
           <Grid item xs={12} sm={6}>
             <br />
             <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <About />
+              <Works/>
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <Grid container spacing={3}  >
-          <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Index />
-                  </Typography><br />
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
-                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link>
-                    <Link  href="https://github.com/AmritSatpathy" >
-                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br /><br />
-                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
-                  </Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
-                      Download CV&nbsp;
-                     <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
-                     </Link>
-                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
-                    |
-                    </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
-                      Contact Me
-                        <CallIcon style={{ fontSize: 36 }} color="primary" />
-                    </Link>
-                  </Typography>
-                </ThemeProvider>
-              </Box>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <br />
-            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <About />
-            </Box>
-          </Grid>
-        </Grid>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
       <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
               <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >

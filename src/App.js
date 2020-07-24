@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import VerticalTabs from './components/Vert'
+import VerticalTabs from './components/Vert.jsx'
 
 function App() {
   return (
