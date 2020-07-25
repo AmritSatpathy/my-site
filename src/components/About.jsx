@@ -124,14 +124,14 @@ export default function About() {
                <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                     <img className={classes.im} src={dav} alt={dav} style={{ width: '15%', height: '1%', display: 'flex', alignItems: 'center' }} />
+                     <img className={classes.im} src={dav} alt={dav} style={{ width: '18%',  display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;
                      <Typography variant="h3" style={{ fontSize: '30px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
                         12th Grade (2016 - 2018)
                         </Typography>
                   </div>
                   <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
-                     Scored 93.4% in CBSE board exam taking science branch
+                     Scored 93.4% in CBSE board exam taking science branch<p></p>
                </Typography>
                </Box>
                <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
@@ -144,7 +144,7 @@ export default function About() {
                         </Typography>
                   </div>
                   <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
-                     Currently pursuing Btech in computer science from Vellore Institute of Technology
+                     Currently pursuing Btech in computer science from Vellore Institute of Technology<p></p>
                </Typography>
                </Box>
             </Grid>
@@ -157,27 +157,27 @@ export default function About() {
                <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                     <img className={classes.im} src={jets} alt={dav} style={{ width: '20%', height: '1%', display: 'flex', alignItems: 'center' }} />
+                     <img className={classes.im} src={jets} alt={dav} style={{ width: '18%',  display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;
                      <Typography variant="h3" style={{ fontSize: '30px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
                         May 2020 - June 2020
                         </Typography>
                   </div>
                   <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
-                     Worked on automating replies to client mails using deep neural network 
+                     Worked on automating replies to client mails using deep neural network <p></p>
                </Typography>
                </Box>
                <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                     <img className={classes.im} src={gen} alt={vit} style={{ width: '16%', display: 'flex', alignItems: 'center' }} />
+                     <img className={classes.im} src={gen} alt={vit} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                      <Typography variant="h3" style={{ fontSize: '28px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
                         Jun 2019 - Jun 2020
                         </Typography>
                   </div>
                   <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
-                    Contributed in making several projects assinged to us by the club
+                    Contributed in making several projects assinged to us by the club <p></p>
                </Typography>
                </Box>
             </Grid>

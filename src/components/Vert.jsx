@@ -11,12 +11,12 @@ import CloudDownloadRoundedIcon from '@material-ui/icons/CloudDownloadRounded';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CallIcon from '@material-ui/icons/Call';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import me from '../image/me1.png';
-import Index from './Change.jsx'
+import me from '../image/Me.jpg';
 import About from './About.jsx'
 import Skills from './Skills.jsx'
 import Works from './Works.jsx'
 import Contact from './Feedbackform.jsx'
+import Home from './Change.jsx';
 
 
 function TabPanel(props) {
@@ -146,7 +146,7 @@ export default function VerticalTabs() {
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Index />
+                    <Home/>
                   </Typography><br />
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
                     <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
@@ -154,7 +154,7 @@ export default function VerticalTabs() {
                       </Link>
                     <Link  href="https://github.com/AmritSatpathy" >
                       <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br /><br />
+                      </Link><br /><br />
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
@@ -189,7 +189,7 @@ export default function VerticalTabs() {
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Index />
+                    <Home/>
                   </Typography><br />
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
                     <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
@@ -197,7 +197,7 @@ export default function VerticalTabs() {
                       </Link>
                     <Link  href="https://github.com/AmritSatpathy" >
                       <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br /><br />
+                      </Link><br /><br />
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
@@ -227,12 +227,12 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={2}>
       <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="65%" order={1} justifyContent="flex-start" overflow="auto" >
                 <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Index />
+                    <Home />
                   </Typography><br />
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
                     <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
@@ -240,7 +240,7 @@ export default function VerticalTabs() {
                       </Link>
                     <Link  href="https://github.com/AmritSatpathy" >
                       <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br /><br />
+                      </Link><br /><br />
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
@@ -270,12 +270,12 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={3}>
       <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+              <Box className={classes.box1} fontWeight="fontWeightBold" width="80%" height="96%" order={1} justifyContent="flex-start" overflow="auto" >
                 <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
                 <ThemeProvider theme={theme}>
                   <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Index />
+                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }} id = "txt">
+                    <Home />
                   </Typography><br />
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
                     <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
@@ -283,7 +283,7 @@ export default function VerticalTabs() {
                       </Link>
                     <Link  href="https://github.com/AmritSatpathy" >
                       <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br /><br />
+                      </Link><br /><br />
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
@@ -304,7 +304,7 @@ export default function VerticalTabs() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+            <Box className={classes.box2} height="84%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <Contact/>
             </Box>
           </Grid>

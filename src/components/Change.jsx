@@ -1,55 +1,35 @@
-import React from 'react';
-class Change extends React.Component {
+import React, { Component } from 'react';
 
 
-    myFunction = () => {
-        var x = 0;
-        setInterval(function () {
-            console.log(x);
-            x = x + 1;
-            x = x % 8;
-            switch (x) {
-                case 0:
-                    document.getElementById("txt").innerText = "I am a Data Scientist";
-                    break;
-                case 1:
-                    document.getElementById("txt").innerText = "I am a Full Stack Developer";
-                    break;
-                case 2:
-                    document.getElementById("txt").innerText = "I am a Cloud Practioner";
-                    break;
-                case 3:
-                    document.getElementById("txt").innerText = "I am a Software Developer";
-                    break;
-                case 4:
-                    document.getElementById("txt").innerText = "I am a Ethical Hacker";
-                    break;
-                case 5:
-                    document.getElementById("txt").innerText = "I am a Game Developer";
-                    break;
-                case 6:
-                    document.getElementById("txt").innerText = "I am a Video Editor";
-                    break;
-                case 7:
-                    document.getElementById("txt").innerText = "I am a Mobile App Developer";
-                    break;
-                default:
-                    document.getElementById("txt").innerText = "Just a Guy";
-                    break;
-            }
-        }, 1500);
-    }
+const textArray = ['Game Developer', 'Data Scientist', 'Full Stack Developer', 'Cloud Practioner', 'Software Developer', 'Ethical Hacker', 'Game Developer','Video Editor','Mobile App Developer','Just a Guy' ];
 
+class Home extends Component {
+  constructor() {
+    super();
+    this.state = { textIdx: 0 };
+  }
 
+  componentDidMount() {
+    this.timeout = setInterval(() => {
+      let currentIdx = this.state.textIdx;
+      this.setState({ textIdx: currentIdx + 1 });
+    }, 1500);
+  }
 
-    render() {
-        this.myFunction();
-        return (
-            <div>
-                <p id="txt"></p>
-            </div>
-        );
-    }
+  componentDidUnmount() {
+    clearInterval(this.timeout);
+  }
+
+  render() {
+    let textThatChanges = textArray[this.state.textIdx % textArray.length];
+
+    return (
+      <section>
+        <h2>I am a ...... </h2>
+        <p><span>{textThatChanges}</span></p>
+      </section>
+    )
+  }
 }
 
-export default Change;
+export default Home;
