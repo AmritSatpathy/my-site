@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import VerticalTabs from './components/Vert.jsx'
+import PropTypes from 'prop-types';
 
 function App() {
   return (
@@ -11,5 +12,8 @@ function App() {
     </div>
   );
 }
+App.propTypes = {
+  env: PropTypes.object.isRequired
+};
 
 export default App;

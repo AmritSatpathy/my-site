@@ -3,11 +3,13 @@ import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Link from '@material-ui/core/Link';
 import crime from '../image/crime.jpg';
 import Dairy from '../image/Dairy.jpg';
 import jets from '../image/Email.jpg';
 import toxic from '../image/toxic.jpg';
 import pubg from '../image/pubg.jpg';
+import box from '../image/box.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -75,7 +77,9 @@ export default function Works() {
                             <img className={classes.im} src={toxic} alt={toxic} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                                &emsp;&emsp;&emsp;
                              <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
-                               Toxic Comment Classification
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/toxicCommentsclassification">
+                             Toxic Comment Classification
+                               </Link>
                                </Typography>
                         </div>
                         <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
@@ -90,7 +94,9 @@ export default function Works() {
                             <img className={classes.im} src={jets} alt={jets} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                                &emsp;&emsp;&emsp;
                              <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
-                                Auto Email Replies using Neural Network
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/MyBot">
+                             Auto Email Replies using Neural Network
+                               </Link>
                                </Typography>
                         </div>
                         <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
@@ -105,7 +111,9 @@ export default function Works() {
                             <img className={classes.im} src={Dairy} alt={Dairy} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                                &emsp;&emsp;&emsp;
                              <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
-                                Dairy Keeping Web-App
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/googleauth_with_node">
+                             Dairy Keeping Web-App
+                               </Link>
                                </Typography>
                         </div>
                         <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
@@ -120,7 +128,9 @@ export default function Works() {
                             <img className={classes.im} src={pubg} alt={pubg} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                                &emsp;&emsp;&emsp;
                              <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
-                                Pubg - Win Prediction
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/toxicCommentsclassification">
+                             Pubg - Win Prediction
+                               </Link>
                                </Typography>
                         </div>
                         <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
@@ -135,11 +145,30 @@ export default function Works() {
                             <img className={classes.im} src={crime} alt={crime} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                                &emsp;&emsp;&emsp;
                              <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
-                               Crime Reporting Website
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/crimeapp">
+                             Crime Reporting Website
+                               </Link>
                                </Typography>
                         </div>
                         <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
                             Developed a websiteusing Laravel Framework which will help authorities to act immediatly on crime reported by users in nearby area
+                           </Typography>
+                    </Box>
+                </Grid>
+                <Grid item xs={12}>
+                    <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
+
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <img className={classes.im} src={box} alt={box} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
+                               &emsp;&emsp;&emsp;
+                             <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
+                             <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://github.com/AmritSatpathy/basicunity">
+                             Box Crash 
+                               </Link>
+                               </Typography>
+                        </div>
+                        <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
+                            Developed a simple game with the main objective being to avoid crashing into obstacles on the way to pass levels
                            </Typography>
                     </Box>
                 </Grid>

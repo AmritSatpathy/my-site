@@ -16,6 +16,7 @@ import Index from './Change.jsx'
 import About from './About.jsx'
 import Skills from './Skills.jsx'
 import Works from './Works.jsx'
+import Contact from './Feedbackform.jsx'
 
 
 function TabPanel(props) {
@@ -157,14 +158,14 @@ export default function VerticalTabs() {
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
                       Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
                      </Link>
                     <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
                     |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
                       Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
                     </Link>
@@ -200,14 +201,14 @@ export default function VerticalTabs() {
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
                       Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
                      </Link>
                     <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
                     |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
                       Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
                     </Link>
@@ -243,14 +244,14 @@ export default function VerticalTabs() {
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
                       Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
                      </Link>
                     <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
                     |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
                       Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
                     </Link>
@@ -286,14 +287,14 @@ export default function VerticalTabs() {
                     <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
                   </Typography>
                   <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
                       Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
                      </Link>
                     <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
                     |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="mailto:yourcompany@gmail.com">
+                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
                       Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
                     </Link>
@@ -304,7 +305,7 @@ export default function VerticalTabs() {
           <Grid item xs={12} sm={6}>
             <br />
             <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <About />
+              <Contact/>
             </Box>
           </Grid>
         </Grid>

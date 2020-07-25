@@ -87,10 +87,9 @@ export default function About() {
             <Grid item xs={6}>
                <Box className={classes.box1} justifyContent="flex-start">
                   <Typography variant="h3" style={{ fontSize: '27px', color: '#b0bec5', textAlign: "left" }}>
-                     I am Ryan Adlard, web designer
-                     from USA, California. I have rich experience in web site design
-                     and building and customization, also I am good at wordpress.
-                     I love to talk with you about our unique.
+                     Hey, I am Amrit Satpathy currently pursuing Btech in computer science.I have always been passionate
+                     towards technology .If you do not find me with my laptop you would probably find me sleeping.I believe hardwork 
+                     and perseverance can take you miles
           </Typography>
                </Box>
             </Grid>
