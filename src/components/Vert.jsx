@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+    color: 'linear-gradient(45deg, #FDFC47 30%,#24FE41 90%)',
     backgroundColor: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
   },
   container: {
@@ -80,23 +80,23 @@ const useStyles = makeStyles((theme) => ({
   },
 
   box1: {
-    background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+    background: '#2eff4d',
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, 1)',
-    color: 'white',
+    color: 'black',
     padding: '0 10px',
     margin: '0 45px',
   },
   im: {
-    boxShadow: '3px 2px 2px 2px rgba(63, 191, 191, 1)',
-    borderRadius: 3,
-    padding: 10
+    boxShadow: '3px 2px 2px 2px rgba(255, 0, 0, 1)',
+    borderRadius: 0,
+    paddingTop: 5
   },
   box2: {
-    background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+    background: '#fffc38',
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, 1)',
-    color: 'white',
+    color: 'black',
 
 
   },
@@ -133,179 +133,179 @@ export default function VerticalTabs() {
 
         className={classes.tabs}
       >
-        <Tab label="HOME" {...a11yProps(0)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="ABOUT" {...a11yProps(1)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="PROJECTS" {...a11yProps(2)} style={{ fontSize: '20px', color: '#2ce65d' }} />
-        <Tab label="CONTACT" {...a11yProps(3)} style={{ fontSize: '20px', color: '#2ce65d' }} />
+        <Tab label="HOME" {...a11yProps(0)} style={{ fontSize: '20px', color: '#000000', fontFamily: 'BioRhyme' }} />
+        <Tab label="ABOUT" {...a11yProps(1)} style={{ fontSize: '20px', color: '#000000', fontFamily: 'BioRhyme' }} />
+        <Tab label="PROJECTS" {...a11yProps(2)} style={{ fontSize: '20px', color: '#000000', fontFamily: 'BioRhyme' }} />
+        <Tab label="CONTACT" {...a11yProps(3)} style={{ fontSize: '20px', color: '#000000', fontFamily: 'BioRhyme' }} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Home/>
-                  </Typography><br />
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
-                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link>
-                    <Link  href="https://github.com/AmritSatpathy" >
-                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br />
-                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
-                  </Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
-                      Download CV&nbsp;
+            <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="50%" order={1} justifyContent="flex-start" overflow="auto" >
+              <img src={me} responsive className={classes.im} alt="me(-:" style={{ width: '95%', height: '50%' }} />
+              <ThemeProvider theme={theme}>
+                <Typography variant="h3" style={{ fontSize: '40px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>Amrit Satpathy</Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Home />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                    <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link>
+                  <Link href="https://github.com/AmritSatpathy" >
+                    <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link><br />
+                  <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
+                    Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
-                     </Link>
-                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
-                    |
+                  </Link>
+                  <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                  |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
-                      Contact Me
+                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
+                    Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
-                    </Link>
-                  </Typography>
-                </ThemeProvider>
-              </Box>
+                  </Link>
+                </Typography>
+              </ThemeProvider>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+            <Box className={classes.box2} height="42%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
               <About />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <Grid container spacing={3}  >
+        <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="28%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Home/>
-                  </Typography><br />
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
-                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link>
-                    <Link  href="https://github.com/AmritSatpathy" >
-                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br />
-                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
-                  </Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
-                      Download CV&nbsp;
+            <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="24%" order={1} justifyContent="flex-start" overflow="auto" >
+              <img src={me} responsive className={classes.im} alt="me(-:" style={{ width: '95%', height: '50%' }} />
+              <ThemeProvider theme={theme}>
+                <Typography variant="h3" style={{ fontSize: '40px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>Amrit Satpathy</Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Home />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                    <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link>
+                  <Link href="https://github.com/AmritSatpathy" >
+                    <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link><br />
+                  <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
+                    Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
-                     </Link>
-                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
-                    |
+                  </Link>
+                  <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                  |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
-                      Contact Me
+                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
+                    Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
-                    </Link>
-                  </Typography>
-                </ThemeProvider>
-              </Box>
+                  </Link>
+                </Typography>
+              </ThemeProvider>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="25%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <Skills />
+            <Box className={classes.box2} height="20%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+              <Skills/>
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <Grid container spacing={3}  >
+        <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="65%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Home />
-                  </Typography><br />
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
-                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link>
-                    <Link  href="https://github.com/AmritSatpathy" >
-                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br />
-                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
-                  </Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
-                      Download CV&nbsp;
+            <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="60%" order={1} justifyContent="flex-start" overflow="auto" >
+              <img src={me} responsive className={classes.im} alt="me(-:" style={{ width: '95%', height: '50%' }} />
+              <ThemeProvider theme={theme}>
+                <Typography variant="h3" style={{ fontSize: '40px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>Amrit Satpathy</Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Home />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                    <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link>
+                  <Link href="https://github.com/AmritSatpathy" >
+                    <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link><br />
+                  <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
+                    Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
-                     </Link>
-                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
-                    |
+                  </Link>
+                  <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                  |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
-                      Contact Me
+                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
+                    Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
-                    </Link>
-                  </Typography>
-                </ThemeProvider>
-              </Box>
+                  </Link>
+                </Typography>
+              </ThemeProvider>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="55%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <Works/>
+            <Box className={classes.box2} height="50%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+              <Works />
             </Box>
           </Grid>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <Grid container spacing={3}  >
+        <Grid container spacing={3}  >
           <Grid item xs={12} sm={6} >
-              <Box className={classes.box1} fontWeight="fontWeightBold" width="80%" height="96%" order={1} justifyContent="flex-start" overflow="auto" >
-                <img src={me} responsive className={classes.im} alt ="me(-:" style={{ width: '95%', height: '50%' }} />
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h3" style={{ fontSize: '40px', color: '#b0bec5', textAlign: "center" }}>Amrit Satpathy</Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }} id = "txt">
-                    <Home />
-                  </Typography><br />
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
-                      <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link>
-                    <Link  href="https://github.com/AmritSatpathy" >
-                      <GitHubIcon style={{ fontSize: 28 }} color="primary" />
-                      </Link><br /><br />
-                    <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
-                  </Typography>
-                  <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center" }}>
-                    <Link  style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download>
-                      Download CV&nbsp;
+            <Box className={classes.box1} fontWeight="fontWeightBold" width="75%" height="90%" order={1} justifyContent="flex-start" overflow="auto" >
+              <img src={me} responsive className={classes.im} alt="me(-:" style={{ width: '95%', height: '50%' }} />
+              <ThemeProvider theme={theme}>
+                <Typography variant="h3" style={{ fontSize: '40px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>Amrit Satpathy</Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Home />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ marginLeft: '0rem', marginRight: '5rem' }} href="www.linkedin.com/in/amrit-satpathy" >
+                    <LinkedInIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link>
+                  <Link href="https://github.com/AmritSatpathy" >
+                    <GitHubIcon style={{ fontSize: 28 }} color="primary" />
+                  </Link><br />
+                  <hr style={{ color: '#03a9f4', backgroundColor: '#b0bec5', height: 1 }} />
+                </Typography>
+                <Typography variant="h3" style={{ fontSize: '20px', color: '#2ce65d', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <Link style={{ display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="https://myresumesitebucket2020.s3.ap-south-1.amazonaws.com/AMRIT_SATPATHY.pdf" download >
+                    Download CV&nbsp;
                      <CloudDownloadRoundedIcon style={{ fontSize: 36 }} color="primary" />
-                     </Link>
-                    <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
-                    |
+                  </Link>
+                  <span style={{ color: '#b0bec5' }} >&nbsp;&nbsp;
+                  |
                     </span >
-                    <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
-                      Contact Me
+                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
+                    Contact Me
                         <CallIcon style={{ fontSize: 36 }} color="primary" />
-                    </Link>
-                  </Typography>
-                </ThemeProvider>
-              </Box>
+                  </Link>
+                </Typography>
+              </ThemeProvider>
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <br />
-            <Box className={classes.box2} height="84%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
-              <Contact/>
+            <Box className={classes.box2} height="80%" width="100%" overflow="auto" order={2} justifyContent="flex-start">
+              <Contact />
             </Box>
           </Grid>
         </Grid>

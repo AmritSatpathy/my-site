@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
    },
    table: {
       width: "100%",
-      background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+      background: 'linear-gradient(45deg, #24FE41 30%,#FDFC47 90%)',
    },
    im: {
       boxShadow: '3px 2px 2px 2px rgba(0, 0, 0, 1)',
@@ -30,18 +30,32 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center'
    },
    box1: {
-      background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+      background: '#2eff4d',
       borderRadius: 5,
       color: 'white',
       padding: '0 10px',
    },
    box2: {
-      background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+      background: '#fffc38',
       borderRadius: 5,
       color: 'white',
       padding: '0 10px',
       height: "100%",
       lineHeight: 100,
+   },
+   box3: {
+      background: '2eff4d',
+      borderRadius: 5,
+      color: 'white',
+      padding: '0 10px',
+      height: "100%",
+      lineHeight: 100,
+   },
+   box4: {
+      background: 'linear-gradient(45deg, #24FE41 30%,#FDFC47 90%)',
+      borderRadius: 5,
+      color: 'white',
+      padding: '0 10px',
    },
 }));
 
@@ -62,7 +76,7 @@ const theme = createMuiTheme();
 
 theme.typography.h3 = {
    fontSize: '1.2rem',
-   '@media (min-width:600px)': {
+   '@media (min-width:1000px)': {
       fontSize: '1.5rem',
    },
    [theme.breakpoints.up('md')]: {
@@ -78,18 +92,18 @@ export default function About() {
       <div className={classes.root}>
          <Grid container spacing={1.8}>
             <Grid item xs={12}>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1} justifyContent="flex-start">
-                  <Typography variant="h3" style={{ fontSize: '39px', color: '#b0bec5', textAlign: "center" }}>
-                     About Me
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4} justifyContent="flex-start">
+                  <Typography variant="h3" style={{ fontSize: '39px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme'}}>
+                     Let Me Tell You About Me<p></p>
                   </Typography>
                </Box>
             </Grid>
             <Grid item xs={6}>
-               <Box className={classes.box1} justifyContent="flex-start">
-                  <Typography variant="h3" style={{ fontSize: '27px', color: '#b0bec5', textAlign: "left" }}>
-                     Hey, I am Amrit Satpathy currently pursuing Btech in computer science.I have always been passionate
-                     towards technology .If you do not find me with my laptop you would probably find me sleeping.I believe hardwork 
-                     and perseverance can take you miles
+               <Box className={classes.box4} justifyContent="flex-start">
+                  <Typography variant="h3" style={{ fontSize: '27px', color: '#29168a', textAlign: "left", fontFamily: 'Caveat' }}>
+                     Hey, I am Amrit Satpathy currently pursuing B.Tech in Computer Science. I have always been passionate
+                     towards technology. If you do not find me with my laptop you would probably find me sleeping. I firmly 
+                     believe hardwork and perseverance can help you achieve any goal in life.
           </Typography>
                </Box>
             </Grid>
@@ -103,10 +117,10 @@ export default function About() {
                            {rows.map((row) => (
                               <TableRow key={row.name}>
                                  <TableCell component="th" scope="row">
-                                    <Typography variant="h3" style={{ fontSize: '19px', color: '#b0bec5', textAlign: "left" }}>{row.name}</Typography>
+                                    <Typography variant="h3" style={{ fontSize: '19px', color: '#29168a', textAlign: "left", fontFamily: 'BioRhyme' }}>{row.name}</Typography>
                                  </TableCell>
                                  <TableCell align="right">
-                                    <Typography variant="h3" style={{ fontSize: '19px', color: '#b0bec5', textAlign: "left" }}>{row.details}</Typography>
+                                    <Typography variant="h3" style={{ fontSize: '19px', color: '#29168a', textAlign: "left", fontFamily: 'BioRhyme' }}>{row.details}</Typography>
                                  </TableCell>
                               </TableRow>
                            ))}
@@ -116,67 +130,67 @@ export default function About() {
                </Box>
             </Grid>
             <Grid item xs={12}>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1} >
-                  <Typography variant="h3" style={{ fontSize: '39px', color: '#b0bec5', textAlign: "center" }}>
-                     Education
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4} >
+                  <Typography variant="h3" style={{ fontSize: '39px',  color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  <p></p>Education<p></p><p></p>
                   </Typography>
                </Box>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                      <img className={classes.im} src={dav} alt={dav} style={{ width: '18%',  display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;
-                     <Typography variant="h3" style={{ fontSize: '30px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
+                     <Typography variant="h3" style={{ fontSize: '30px', color: '#29168a', textAlign: "center", textDecorationLine: 'underline', fontFamily: 'BioRhyme' }}>
                         12th Grade (2016 - 2018)
                         </Typography>
                   </div>
-                  <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
+                  <Typography variant="h3" style={{ fontSize: '27px', color: '#29168a', textAlign: "left",fontFamily: 'Caveat' }}>
                      Scored 93.4% in CBSE board exam taking science branch<p></p>
                </Typography>
                </Box>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                      <img className={classes.im} src={vit} alt={vit} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
-                     &emsp;&emsp;&emsp;
-                     <Typography variant="h3" style={{ fontSize: '22px', color: '#b0bec5', textAlign: "left", textDecorationLine: 'underline' }}>
+                     &emsp;
+                     <Typography variant="h3" style={{ fontSize: '22px', color: '#29168a', textAlign: "left", textDecorationLine: 'underline', fontFamily: 'BioRhyme' }}>
                         B.tech in Computer Science (2018 - present)
                         </Typography>
                   </div>
-                  <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
+                  <Typography variant="h3" style={{ fontSize: '27px', color: '#29168a', textAlign: "left", fontFamily: 'Caveat'}}>
                      Currently pursuing Btech in computer science from Vellore Institute of Technology<p></p>
                </Typography>
                </Box>
             </Grid>
             <Grid item xs={12}>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1} >
-                  <Typography variant="h3" style={{ fontSize: '39px', color: '#b0bec5', textAlign: "center" }}>
-                  Experience
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4} >
+                  <Typography variant="h3" style={{ fontSize: '39px', color: '#29168a', textAlign: "center", fontFamily: 'BioRhyme' }}>
+                  Experience<p></p><p></p>
                   </Typography>
                </Box>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                      <img className={classes.im} src={jets} alt={dav} style={{ width: '18%',  display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;
-                     <Typography variant="h3" style={{ fontSize: '30px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
+                     <Typography variant="h3" style={{ fontSize: '30px', color: '#29168a', textAlign: "center", textDecorationLine: 'underline', fontFamily: 'BioRhyme' }}>
                         May 2020 - June 2020
                         </Typography>
                   </div>
-                  <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
+                  <Typography variant="h3" style={{ fontSize: '27px', color: '#29168a', textAlign: "left", fontFamily: 'Caveat' }}>
                      Worked on automating replies to client mails using deep neural network <p></p>
                </Typography>
                </Box>
-               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
+               <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box4}>
 
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                      <img className={classes.im} src={gen} alt={vit} style={{ width: '18%', display: 'flex', alignItems: 'center' }} />
                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                     <Typography variant="h3" style={{ fontSize: '28px', color: '#b0bec5', textAlign: "center", textDecorationLine: 'underline' }}>
+                     <Typography variant="h3" style={{ fontSize: '28px', color: '#29168a', textAlign: "center", textDecorationLine: 'underline', fontFamily: 'BioRhyme' }}>
                         Jun 2019 - Jun 2020
                         </Typography>
                   </div>
-                  <Typography variant="h3" style={{ fontSize: '25px', color: '#b0bec5', textAlign: "left" }}>
+                  <Typography variant="h3" style={{ fontSize: '27px', color: '#29168a', textAlign: "left" , fontFamily: 'Caveat'}}>
                     Contributed in making several projects assinged to us by the club <p></p>
                </Typography>
                </Box>

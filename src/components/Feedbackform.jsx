@@ -21,17 +21,17 @@ const USER_ID = "user_wUJQo9CNf5kZLduz9VGcx";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    color: '#b0bec5',
+    color: '#29168a',
     margin: theme.spacing(1),
   },
   box1: {
-    background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+    background: 'linear-gradient(45deg, #24FE41 30%,#FDFC47 90%)',
     borderRadius: 5,
     color: 'white',
     padding: '0 10px',
   },
   box2: {
-    background: 'linear-gradient(45deg, #141E30 30%,#243B55 90%)',
+    background: 'linear-gradient(45deg, #24FE41 30%,#FDFC47 90%)',
     borderRadius: 5,
     color: 'white',
     padding: '0 10px',
@@ -39,22 +39,23 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 100,
   },
   inputt: {
-    background: '#050505',
+    background: 'linear-gradient(45deg, #f12711 30%,#f5af19 90%)',
     borderRadius: 10,
-    color: 'black',
     padding: '0 10px',
     height: "100%",
-    lineHeight: 100,
     fontSize: 25,
-    width: "98%"
+    width: "96%",    
+    color: "#29168a",
+    fontFamily: 'Caveat'
   },
   texts: {
-    background: '#050505',
+    background: 'linear-gradient(45deg, #f12711 30%,#f5af19 90%)',
     borderRadius: 10,
     padding: '0 10px',
-    fontSize: 25,
-    width: "98%",
-    color: "#fff"
+    fontSize: 30,
+    width: "96%",
+    color: "#29168a",
+    fontFamily: 'Caveat'
  },
  large: {
   width: theme.spacing(10),
@@ -104,20 +105,20 @@ export default function Contact() {
       <Grid container spacing={1.8} direction="row" justify="center" alignItems="center" >
         <Grid item xs={12}>
           <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1} justifyContent="flex-start">
-            <Typography variant="h3" style={{ fontSize: '39px', color: '#b0bec5', textAlign: "center" }}>
-              Get In Touch
+            <Typography variant="h3" style={{ fontSize: '39px', color: '#29168a', textAlign: "center" ,fontFamily: 'BioRhyme'}}>
+              Get In Touch<p></p>
             </Typography>
           </Box>
         </Grid>
         <Grid item xs={6}>
           <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
-          <Typography variant="h3" style={{ fontSize: '30px', color: 'black', textAlign: "left" }}> 
+          <Typography variant="h3" style={{ fontSize: '27px', color: 'black', textAlign: "left" }}> 
               <List>
                 <ListItem>
                   <ListItemAvatar>
                   <Avatar alt="call" src={call} className={classes.large} variant	= 'rounded'/>
                   </ListItemAvatar>
-                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' }} href="tel:+91-7683982955">
+                  <Link style={{ marginLeft: '2rem', display: 'inline-flex', flex: 1, flexDirection: 'row', alignItems: 'center' ,fontFamily: 'BioRhyme',color: '#29168a'}} href="tel:+91-7683982955">
                   7683982955
                   </Link>
                 </ListItem>
@@ -127,8 +128,8 @@ export default function Contact() {
         </Grid>
         <Grid item xs={12}>
           <Box fontWeight="fontWeightBold" boxShadow={10} className={classes.box1}>
-            <Typography variant="h3" style={{ fontSize: '25px', color: 'black', textAlign: "left" }}>
-              <br />
+            <Typography variant="h3" style={{ fontSize: '25px', color: '#29168a', textAlign: "left" }}>
+            <p></p><br/>
               <form>
                 <input
                   type="text" placeholder='Your Name' className={classes.inputt}
@@ -144,7 +145,7 @@ export default function Contact() {
                 ></textarea><br />
                 </form>
                 </Typography>
-                <Typography variant="h3" style={{ fontSize: '25px', color: 'black', textAlign: "center" }}>
+                <Typography variant="h3" style={{ fontSize: '25px', color: '#29168a', textAlign: "center",fontFamily: 'BioRhyme' }}>
                 <Button
                   variant="contained"
                   color="primary"
