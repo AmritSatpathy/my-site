@@ -1,96 +1,96 @@
-body, html {
+body,
+html {
   height: 100%;
-  }
-  .bg {
+}
+.bg {
   background-image: url("./image/back.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .bg {
+    overflow: auto;
   }
-      /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .bg{
-  overflow: auto;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .bg {
+    overflow: auto;
   }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .bg {
+    overflow: auto;
   }
-  
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 321px) {
-    .bg{
-      overflow: auto;
-      }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .bg {
+    overflow: auto;
   }
-  
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 320px) {
-    .bg{
-      overflow: auto;
-      }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .bg {
+    overflow: auto;
   }
-  
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .bg{
-      overflow: auto;
-      }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .bg {
+    overflow: auto;
   }
-  
-  /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .bg{
-      overflow: auto;
-      }
-  }
-  
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .bg{
-      overflow: auto;
-      }
-  }
-  /**********
+}
+/**********
   iPad 3
   **********/
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    .bg{
-      overflow: auto;
-      }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .bg {
+    overflow: auto;
   }
-  
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    .bg{
-      overflow: hidden;
-      }
-  }
-  /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-    .bg{
-      overflow: hidden;
-      }
-  }
-  
-  /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
-    .bg{
-      overflow: hidden;
-      }
-  }
-  
-  /* iPhone 4 ----------- */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    .bg{
-      overflow: auto;
-      }
-  }
-  
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    .bg{
-      overflow: auto;
-      }
-  }
+}
 
-  textarea{
-    color: #89bcf0;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .bg {
+    overflow: hidden;
   }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .bg {
+    overflow: hidden;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .bg {
+    overflow: hidden;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .bg {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .bg {
+    overflow: auto;
+  }
+}
+
+textarea {
+  color: #89bcf0;
+}

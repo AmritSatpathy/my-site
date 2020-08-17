@@ -1,7 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-
-const textArray = ['Game Developer', 'Data Scientist', 'Full Stack Developer', 'Cloud Practioner', 'Software Developer', 'Ethical Hacker', 'Game Developer','Video Editor','Mobile App Developer','Just a Guy' ];
+const textArray = [
+  "Game Developer",
+  "Data Scientist",
+  "Full Stack Developer",
+  "Cloud Practioner",
+  "Software Developer",
+  "Ethical Hacker",
+  "Game Developer",
+  "Video Editor",
+  "Mobile App Developer",
+];
 
 class Home extends Component {
   constructor() {
@@ -25,10 +34,12 @@ class Home extends Component {
 
     return (
       <section>
-        <h2>I am a ...... </h2>
-        <p><span>{textThatChanges}</span></p>
+        <h2>I am an amateaur ..... </h2>
+        <p>
+          <span>{textThatChanges}</span>
+        </p>
       </section>
-    )
+    );
   }
 }
 
