@@ -61,13 +61,12 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(1),
       width: "100%",
     },
-    height: "inherit",
+    height: 240,
     flexGrow: 1,
-    backgroundColor: "linear-gradient(45deg, #141E30 30%,#243B55 90%)",
     display: "flex",
   },
   tabs: {
-    borderRight: `5px solid ${theme.palette.divider}`,
+    borderRight: `6px solid ${theme.palette.divider}`,
   },
   paper: {
     padding: theme.spacing(2),
@@ -92,7 +91,8 @@ const useStyles = makeStyles((theme) => ({
   im: {
     boxShadow: "2px 2px 2px 2px rgba(0, 0, 0, 1)",
     borderRadius: 2,
-    paddingTop: 3,
+    padding: 3,
+    margin: 4,
   },
   box2: {
     background: "#fffc38",

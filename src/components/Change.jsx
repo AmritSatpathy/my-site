@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 
 const textArray = [
-  "Game Developer",
-  "Data Scientist",
-  "Full Stack Developer",
-  "Cloud Practioner",
-  "Software Developer",
-  "Ethical Hacker",
-  "Game Developer",
-  "Video Editor",
-  "Mobile App Developer",
+  "Game Developement",
+  "Data Science",
+  "Full Stack Developement",
+  "Cloud Computing",
+  "Software Developement",
+  "Ethical Hacking",
+  "Video Editing",
+  "Mobile App Developement",
 ];
 
 class Home extends Component {
@@ -34,7 +33,7 @@ class Home extends Component {
 
     return (
       <section>
-        <h2>I am an amateaur ..... </h2>
+        <h2>I am interested in ..... </h2>
         <p>
           <span>{textThatChanges}</span>
         </p>
